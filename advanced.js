@@ -148,10 +148,12 @@ ${resources.reducedAnswers(userData.test.answers)}
         
     // Then write the contents to the file using the fs package
     fs.writeFile('README.md', message, (err) => {
-    console.error(err);
-    });
-    }
-
+    if (!err) {
+        console.log('\nYour README file has been successfully created\n'.green);
+    } else {
+        console.error(err);
+    }});
+}    
 
 // OVERALL ADVANCED FUNCTION
 export default async function advanced() {
