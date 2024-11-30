@@ -1,2 +1,0 @@
-- Another text
-- This text
