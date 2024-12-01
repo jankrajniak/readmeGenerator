@@ -10,6 +10,7 @@ import advanced from './advanced.js';
 
 //Function logic
 
+// Main function to run the application. Defined as async to allow for the use of await on user inputs
 async function main() {
     const { choice } = await inquirer.prompt([
         {
@@ -22,7 +23,7 @@ async function main() {
             ]
         }
     ])
-
+    // Run the selected mode
     choice === "\x1b[1mBasic:\x1b[0m Use this mode if your code is simple and doesn't require extensive documentation" ? basic() : advanced();
 }
 

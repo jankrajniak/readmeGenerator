@@ -97,7 +97,7 @@ export function displayContent(array) {
 }
 
 // Helper function used to show the user a list of questions they will be answering and color those questions, which have been answered already, green
-export function displayProgress (readmeData, questions) {
+export function displayProgress(readmeData, questions) {
     let tracker = questions.reduce((message,question) => {
         return message + (readmeData[question.name].answered ? `${colors.green(question.name)}\n` : `${colors.grey(question.name)}\n`)
     },`\n${colors.blue('You will be answering the following questions')}\n-------------------------------------\n`);    
