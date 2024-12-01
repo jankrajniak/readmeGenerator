@@ -4,8 +4,8 @@
 import inquirer from 'inquirer';
 
 //custom private packages
-import basic from './basic.js';
-import advanced from './advanced.js';
+import basic from './scripts/basic.js';
+import advanced from './scripts/advanced.js';
 
 
 //Function logic
