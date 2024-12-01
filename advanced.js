@@ -144,7 +144,10 @@ ${resources.reducedAnswers(userData.test.answers)}
 ## Questions
 - My GitHub username: ${userData.github.answers[0]}
 - My email address: ${userData.email.answers[0]}
-- Additional instructions on how to contact me:\n${resources.reducedAnswers(userData.contactHow.answers, '  - ')}`;
+- Additional instructions on how to contact me:\n${resources.reducedAnswers(userData.contactHow.answers, '  - ')}
+
+## License
+- This project is licensed under the ${userData.license.answers[0]} license: ${licenses[userData.license.answers[0]]}`;
         
     // Then write the contents to the file using the fs package
     fs.writeFile('README.md', message, (err) => {

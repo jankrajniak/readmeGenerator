@@ -25,6 +25,7 @@ ${myData.licenses[answers.license]}
 - [Contribution Guidelines](#contribution-guidelines)
 - [Test Instrustions](#test-instructions)
 - [Questions](#questions)
+- [License](#license)
 
 ## Description
 ${answers.description}
@@ -44,7 +45,10 @@ ${answers.test}
 ## Questions
 - My GitHub username: ${answers.github}
 - My email address: ${answers.email}
-- Additional instructions on how to contact me:\n${answers.contactHow}`;
+- Additional instructions on how to contact me:\n${answers.contactHow}
+
+## License
+- This project is licensed under the ${answers.license} license: ${myData.licenses[answers.license]}`;
     
     // Then write the contents to the file using the fs package
     fs.writeFile('README.md', message, (err) => {
