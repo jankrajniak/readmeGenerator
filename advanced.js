@@ -116,7 +116,7 @@ function buildReadme(userData, licenses) {
        
     const message = `
 # ${userData.projectTitle.answers[0]}
-${myData.licenses[userData.license.answers[0]]}
+${licenses[userData.license.answers[0]]}
 
 ## Table of Contents
 - [Descriptionn](#description)
@@ -168,9 +168,7 @@ export default async function advanced() {
     // Collect user inputs using the collectData function
     const userData = await  collectData(readmeData, questions);
 
-    // Build the README file and write it to the file system
+    // Build the README file and write it to the file system and inform the user of the success (or display error)
     buildReadme(userData, licenses);
-
-    // Let the user know the process was completed successfully 
 
 }
